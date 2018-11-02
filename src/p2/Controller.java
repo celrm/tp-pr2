@@ -12,9 +12,9 @@ public class Controller {
 	
 	public Controller(Game j, Scanner sc) {
 		this.game = j;
-		this.in = sc;
+		this.scanner = sc;
 		this.exit = false;
-		this.firstCycle = true;
+//		this.firstCycle = true;
 	}
 	
 	public void run() {
@@ -35,11 +35,7 @@ public class Controller {
 			}
 		}
 	}
-	setNoPrintGameState();
-	
-	private boolean add(String[] words) {
-		
-	}
+	private void setNoPrintGameState() {}
 	
 	private void list() {
 		System.out.println("[S]unflower: Cost: " + Integer.toString(Sunflower.COSTE) + " suncoins Harm: " + Integer.toString(Sunflower.HARM));
